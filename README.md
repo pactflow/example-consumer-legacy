@@ -1,14 +1,14 @@
-# Example Consumer
+# Example Consumer Legacy
 
-![Build](https://github.com/pactflow/example-consumer/workflows/Build/badge.svg)
+![Build](https://github.com/pactflow/example-consumer-legacy/workflows/Build/badge.svg)
 
-[![Pact Status](https://test.pactflow.io/pacts/provider/pactflow-example-provider/consumer/pactflow-example-consumer/latest/badge.svg?label=provider)](https://test.pactflow.io/pacts/provider/pactflow-example-provider/consumer/pactflow-example-consumer/latest) (latest pact)
+[![Pact Status](https://test.pactflow.io/pacts/provider/pactflow-example-provider-legacy/consumer/pactflow-example-consumer-legacy/latest/badge.svg?label=provider)](https://test.pactflow.io/pacts/provider/pactflow-example-provider-legacy/consumer/pactflow-example-consumer-legacy/latest) (latest pact)
 
-[![Can I deploy Status](https://test.pactflow.io/pacticipants/pactflow-example-consumer/branches/master/latest-version/can-i-deploy/to-environment/production/badge)](https://test.pactflow.io/pacticipants/pactflow-example-consumer/branches/master/latest-version/can-i-deploy/to-environment/production/badge)
+[![Can I deploy Status](https://test.pactflow.io/pacticipants/pactflow-example-consumer-legacy/branches/master/latest-version/can-i-deploy/to-environment/production/badge)](https://test.pactflow.io/pacticipants/pactflow-example-consumer-legacy/branches/master/latest-version/can-i-deploy/to-environment/production/badge)
 
 This is an example of a Node consumer using Pact to create a consumer driven contract, and sharing it via [Pactflow](https://pactflow.io).
 
-It is using a public tenant on Pactflow, which you can access [here](https://test.pactflow.io/) using the credentials `dXfltyFMgNOFZAxr8io9wJ37iUpY42M`/`O5AIZWxelWbLvqMd8PkAVycBJh2Psyg1`. The latest version of the Example Consumer/Example Provider pact is published [here](https://test.pactflow.io/pacts/provider/pactflow-example-provider/consumer/pactflow-example-consumer/latest).
+It is using a public tenant on Pactflow, which you can access [here](https://test.pactflow.io/) using the credentials `dXfltyFMgNOFZAxr8io9wJ37iUpY42M`/`O5AIZWxelWbLvqMd8PkAVycBJh2Psyg1`. The latest version of the Example Consumer/Example Provider pact is published [here](https://test.pactflow.io/pacts/provider/pactflow-example-provider-legacy/consumer/pactflow-example-consumer-legacy/latest).
 
 The project uses a Makefile to simulate a very simple build pipeline with two stages - test and deploy.
 
@@ -26,7 +26,7 @@ See the [Pactflow CI/CD Workshop](https://github.com/pactflow/ci-cd-workshop).
 
 ## Running the application
 
-Start up the [provider](https://github.com/pactflow/example-provider/) (or another [compatible](https://docs.pactflow.io/docs/examples) provider) API by running `npm run start`.
+Start up the [provider](https://github.com/pactflow/example-provider-legacy/) (or another [compatible](https://docs.pactflow.io/docs/examples) provider) API by running `npm run start`.
 
 Open a separate terminal for the consumer.
 
