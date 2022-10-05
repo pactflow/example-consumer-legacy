@@ -21,7 +21,7 @@ jobs:
             # "pactflow-example-bi-directional-provider-dredd",
             # "pactflow-example-bi-directional-provider-restassured",
             # "pactflow-example-bi-directional-provider-postman",
-            "pactflow-example-provider",
+            "pactflow-example-provider-legacy",
           ]
     steps:
       - uses: actions/checkout@v2
@@ -34,7 +34,7 @@ jobs:
         env:
           PACT_PROVIDER: ${{ matrix.pact_provider }}
         run: make test
-      - name: Publish pacts between pactflow-example-consumer and ${{ matrix.pact_provider }}
+      - name: Publish pacts between pactflow-example-consumer-legacy and ${{ matrix.pact_provider }}
         run: GIT_BRANCH=${GIT_REF:11} make publish_pacts
         env:
           PACT_PROVIDER: ${{ matrix.pact_provider }}
